@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mona Lisa - Sanat Dünyası</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mona Lisa</h1>
+        <nav>
+            <a href="#">Anasayfa</a>
+            <a href="#">Ürünler</a>
+            <a href="#">Hakkımızda</a>
+            <a href="#">İletişim</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Sanatın zarafetiyle evinizi süsleyin</h2>
+        <button>Alışverişe Başla</button>
+    </section>
+
+    <section class="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/300x300" alt="Tablo">
+            <h3>Mona Lisa Tablo</h3>
+            <p>Ünlü Mona Lisa tablosu replikası.</p>
+            <span>₺500</span>
+            <button>Sepete Ekle</button>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/300x300" alt="Heykel">
+            <h3>Seated Woman Heykel</h3>
+            <p>Sanat dolu minimalist heykel tasarımı.</p>
+            <span>₺120</span>
+            <button>Sepete Ekle</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mona Lisa - Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+        const buttons = document.querySelectorAll('.product button');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Ürün sepete eklendi!');
+            });
+        });
+    </script>
+</body>
+</html>
